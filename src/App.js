@@ -40,6 +40,7 @@ export default function App() {
         options={Object.keys(seasons)}
         onChange={handleSelect}
         value={selectedSeason || "Select a season"}
+        data-testid="dropdown"
         placeholder="Select an option"
       />
       <Episodes episodes={episodes} />

@@ -6,10 +6,10 @@ test('renders component', () => {
     render(<Episodes episodes={[]}/>)
 })
 
-test('component renders correct data', () => {
+test('component renders data', () => {
     const container = render(<Episodes episodes={[]} />)
 
-    const episodeArray = container.queryAllByTestId("episode")
+    const episodeArray = container.queryAllByTestId(/episode/i)
     
     expect(episodeArray).toHaveLength(0)
 })
